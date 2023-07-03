@@ -3,7 +3,17 @@ As the development of deep learning (DL) techniques has progressed, the creation
 
 
 ## Running the code
-Will be updated soon
+* Download the weights of the models at this link: https://drive.google.com/drive/folders/1jeoqIl6SH5eRZooVesM2gqtBuTxOJbiU?usp=sharing
+* Open the FEADD-Classification.ipynb on Google Colab
+
+## Alternative workflow
+We also implemented an alternative workflow by considering the face detector used in the [Selim Seferbekov](https://github.com/selimsef/dfdc_deepfake_challenge) and in [Davide Coccomini](https://github.com/davide-coccomini/Combining-EfficientNet-and-Vision-Transformers-for-Video-Deepfake-Detection) implementations.  
+In the Alternative workflow folder:
+* detect_faces.py is used to compute the coordinated of the box including the human face
+* extract_crops_us.py is used to extract the human face
+* extracFeatures.py is used to extract the textural and emotional features as proposed in our methodology
+* classification.py is used to provide the prediction for each test video.
+
 
 ## Authors
 Michela Gravina, Antonio Galli, Geremia De Micco, Stefano Marrone, Giuseppe Fiameni, Carlo Sansone
